@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Basit Yapılacaklar Listesi Uygulaması (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, React kullanarak oluşturulmuş basit bir yapılacaklar listesi uygulamasıdır. Kullanıcıların görevler eklemesine ve silmesine olanak tanır.
 
-## Available Scripts
+## Özellikler
 
-In the project directory, you can run:
+*   **Görev Ekleme:** Yeni görevler oluşturabilirsiniz.
+*   **Görev Silme:** Mevcut görevleri listeden kaldırabilirsiniz.
+*   **Basit Arayüz:** Kullanımı kolay ve anlaşılır bir arayüze sahiptir.
 
-### `npm start`
+## Teknolojiler
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*   **React:** Kullanıcı arayüzü geliştirmek için kullanılan JavaScript kütüphanesi.
+*   **JavaScript (ES6+):** Uygulama mantığı için kullanılan programlama dili.
+*   **CSS:** Uygulama stilini düzenlemek için kullanılan stil dili. (App.css ve muhtemelen diğer bileşenlerin CSS dosyaları)
+*   **Material UI Icons:**  Arayüzde ikonlar kullanmak için kullanılan Material UI kütüphanesi. (Özellikle `AssignmentIcon` kullanılıyor)
+*   **Bootstrap:**  Arayüzün daha hızlı ve duyarlı bir şekilde geliştirilmesi için kullanılan CSS framework'ü. (Özellikle buton ve grid sistemleri için kullanılıyor olabilir)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Kurulum
 
-### `npm test`
+Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.  **Depoyu klonlayın:**
 
-### `npm run build`
+    ```bash
+    git clone [https://github.com/EnderKaran/React-Todo-App]
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2.  **Bağımlılıkları yükleyin:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm install  # veya yarn install
+    ```
+    **Not:** Projede Material UI Icons ve Bootstrap kullanıldığı için, eğer `package.json` dosyasında yoksa, Material UI için `npm install @mui/icons-material @mui/material @emotion/react @emotion/styled` ve Bootstrap için `npm install bootstrap` komutunu çalıştırmanız gerekebilir.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3.  **Uygulamayı başlatın:**
 
-### `npm run eject`
+    ```bash
+    npm start    # veya yarn start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Bu komut uygulamayı geliştirme modunda başlatacak ve genellikle tarayıcınızda `http://localhost:3000` adresinde açılacaktır.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Kullanım
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Uygulama başlatıldıktan sonra, aşağıdaki adımları izleyerek kullanabilirsiniz:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1.  **Görev Oluşturma:** Sayfanın üst kısmında bulunan "Yeni Görev Ekle" alanına görevin başlığını ve içeriğini girin. Ardından "Ekle" düğmesine tıklayarak görevi listeye ekleyin.
+2.  **Görevleri Görüntüleme:** Eklenen görevler liste halinde görüntülenecektir. Her görev başlığı ve içeriğiyle birlikte listelenir. **Görevler, Bootstrap grid sistemi sayesinde düzenli bir şekilde yan yana sıralanır (ekran boyutuna göre).**
+3.  **Görev Silme:** Her görevin yanında bulunan "Sil" düğmesine tıklayarak görevi listeden kaldırabilirsiniz.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Ekran Görüntüsü
+![Ekran Görüntüsü 1](Ekran%20görüntüsü%202025-03-02%20174448.png)
